@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Menu = AirQA.Models.Menu;
+using Plugin.FirebasePushNotification;
 
 namespace AirQA.Views
 {
@@ -19,6 +20,8 @@ namespace AirQA.Views
 		{
 			InitializeComponent();
 			MyMenu();
+			
+			CrossFirebasePushNotification.Current.Subscribe("AllDistrict");
 		}
 
 		public void MyMenu()
