@@ -19,6 +19,8 @@ namespace AirQA.Views
 		{
 			InitializeComponent();
 			MyMenu();
+			
+			CrossFirebasePushNotification.Current.Subscribe("AllDistrict");
 		}
 
 		public void MyMenu()
